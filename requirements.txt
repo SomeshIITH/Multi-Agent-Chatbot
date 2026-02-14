@@ -2,25 +2,27 @@
 streamlit==1.36.0
 pandas==2.2.2
 
-# LangChain ecosystem
-langchain==0.2.11
-langchain-core==0.2.27
-langchain-community==0.2.10
-langchain-text-splitters==0.2.2
+# LangChain ecosystem (COMPATIBLE SET)
+langchain==0.2.16
+langchain-core==0.2.41
+langchain-community==0.2.16
+langchain-text-splitters==0.2.4
 
-# LangGraph orchestration
-langgraph==0.1.19
+# LangGraph (needs newer core)
+langgraph==0.2.34
 
 # Model integrations
-langchain-groq==0.1.5
+langchain-groq==0.1.9
 langchain-huggingface==0.0.3
+langgraph-checkpoint-sqlite>=1.0.0
+duckduckgo-search==6.1.9
 
 # HuggingFace backend
 sentence-transformers==3.0.1
 transformers==4.42.4
 torch>=2.2.0
 
-# Vector store (RAG)
+# Vector store
 faiss-cpu==1.8.0
 
 # Document ingestion
@@ -29,7 +31,7 @@ pypdf==4.2.0
 # Environment config
 python-dotenv==1.0.1
 
-# Database checkpointing
+# DB checkpointing
 sqlalchemy==2.0.31
 
 # Networking/runtime

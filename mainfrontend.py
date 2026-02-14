@@ -41,9 +41,9 @@ st.set_page_config(page_title="Multi AI Workspace", layout="wide")
 mode = st.sidebar.radio(
     "Choose AI Mode",
     [
-        " Memory Chatbot",
-        " RAG + Tools Chatbot",
-        " Research Blog Agent",
+        "🧠 Memory Chatbot",
+        "📚 RAG + Tools Chatbot",
+        "✍️ Research Blog Agent",
     ],
 )
 
@@ -501,11 +501,11 @@ def run_blog_agent():
 # ================= Router ============================
 # ============================================================
 
-if mode.startswith(""):
+if mode.startswith("🧠"):
     run_memory_chat()
 
-elif mode.startswith(""):
+elif mode.startswith("📚"):
     run_rag_chat()
 
-else:
+elif mode.startswith("✍️"):
     run_blog_agent()
