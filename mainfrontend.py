@@ -41,9 +41,9 @@ st.set_page_config(page_title="Multi AI Workspace", layout="wide")
 mode = st.sidebar.radio(
     "Choose AI Mode",
     [
-        "💬 Memory Chatbot",
-        "📄 RAG + Tools Chatbot",
-        "📝 Research Blog Agent",
+        " Memory Chatbot",
+        " RAG + Tools Chatbot",
+        " Research Blog Agent",
     ],
 )
 
@@ -98,7 +98,7 @@ def extract_latest_state(current_state: Dict[str, Any], step_payload: Any) -> Di
 
 def run_memory_chat():
 
-    st.title("💬 Memory Chatbot")
+    st.title(" Memory Chatbot")
 
     ss = st.session_state
 
@@ -175,7 +175,7 @@ def run_memory_chat():
 
 def run_rag_chat():
 
-    st.title("📄 RAG + Tools Chatbot")
+    st.title(" RAG + Tools Chatbot")
 
     ss = st.session_state
 
@@ -275,7 +275,7 @@ def run_blog_agent():
     Only this function was changed — memory and rag handlers are preserved as you provided.
     """
 
-    st.title("📝 Research Blog Agent")
+    st.title(" Research Blog Agent")
 
     # Sidebar controls for blog run
     with st.sidebar:
@@ -501,10 +501,10 @@ def run_blog_agent():
 # ================= Router ============================
 # ============================================================
 
-if mode.startswith("💬"):
+if mode.startswith(""):
     run_memory_chat()
 
-elif mode.startswith("📄"):
+elif mode.startswith(""):
     run_rag_chat()
 
 else:
