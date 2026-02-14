@@ -118,7 +118,7 @@ def remember_node(
             if mem.is_new:
                 store.put(ns, str(uuid.uuid4()), {"data": mem.text})
 
-    return {}
+    return {"messages": []}
 
 # ============================================================
 # CHAT NODE
