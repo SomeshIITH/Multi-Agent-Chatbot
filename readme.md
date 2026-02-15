@@ -1,6 +1,6 @@
 
 
-### Setup Instructions
+### Setup Instructions(For course TA please refer readme.txt)
  - Create New Folder and run `git clone https://github.com/SomeshIITH/Multi-Agent-Bot`
 
  - cd Multi-Agent-Chatbot
